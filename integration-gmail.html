@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gmail Integration - Reminders Central</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" style="display: flex; align-items: center; gap: 12px; text-decoration: none; color: inherit;">
+                    <img src="logo.png" alt="Reminders Central" class="logo-icon">
+                    <span class="logo-text">Reminders Central</span>
+                </a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html#features">Features</a>
+                <a href="index.html#integrations">Integrations</a>
+                <a href="index.html#download">Download</a>
+            </div>
+            <a href="index.html#download" class="nav-cta">Get Started</a>
+        </div>
+    </nav>
+
+    <!-- Integration Detail Section -->
+    <section class="integration-detail">
+        <div class="container">
+            <div class="integration-detail-header">
+                <a href="index.html#integrations" class="back-link">← Back to Integrations</a>
+                <h1 class="integration-detail-title">Gmail Integration</h1>
+            </div>
+
+            <div class="integration-flow">
+                <div class="integration-flow-icon">
+                    <img src="logos/gmail.svg" alt="Gmail" class="flow-app-icon">
+                </div>
+                <div class="integration-flow-arrow">
+                    <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M70 50L30 50M70 50L55 35M70 50L55 65" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="integration-flow-icon">
+                    <img src="logos/apple-reminders-icon.png" alt="Apple Reminders" class="flow-reminders-icon">
+                </div>
+            </div>
+
+            <div class="integration-description">
+                <p>
+                    Never lose track of important emails again. With Reminders Central's Gmail integration, 
+                    you can instantly convert any email into an Apple Reminder with a single click. The 
+                    extension automatically extracts the sender, subject line, and email body content, 
+                    creating a comprehensive reminder that includes a direct link back to the original 
+                    email. This means you can quickly capture action items, follow-ups, or important 
+                    information without leaving your inbox, and access everything you need right from 
+                    your Apple Reminders app. Whether you're managing work tasks, personal commitments, 
+                    or project deadlines, this integration ensures that important emails never slip through 
+                    the cracks and that you always have the full context when you're ready to take action.
+                </p>
+            </div>
+
+            <div class="integration-video">
+                <div class="demo-container">
+                    <div class="demo-side demo-left">
+                        <div class="demo-browser">
+                            <div class="browser-header">
+                                <div class="browser-controls">
+                                    <span class="browser-dot"></span>
+                                    <span class="browser-dot"></span>
+                                    <span class="browser-dot"></span>
+                                </div>
+                                <div class="browser-url">gmail.com</div>
+                            </div>
+                            <div class="browser-content gmail-interface">
+                                <div class="gmail-sidebar">
+                                    <div class="gmail-sidebar-item active">Inbox</div>
+                                    <div class="gmail-sidebar-item">Starred</div>
+                                    <div class="gmail-sidebar-item">Sent</div>
+                                </div>
+                                <div class="gmail-main">
+                                    <div class="gmail-email-list">
+                                        <div class="gmail-email-item" id="demo-email">
+                                            <div class="email-checkbox"></div>
+                                            <div class="email-star"></div>
+                                            <div class="email-from">Sarah Johnson</div>
+                                            <div class="email-subject">Project proposal review needed</div>
+                                            <div class="email-time">2:30 PM</div>
+                                        </div>
+                                    </div>
+                                    <div class="gmail-email-view" id="email-view">
+                                        <div class="email-header">
+                                            <div class="email-header-top">
+                                                <h3 class="email-view-subject">Project proposal review needed</h3>
+                                                <button class="add-to-reminders-btn" id="add-reminder-btn">
+                                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                        <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path>
+                                                        <polyline points="17 21 17 13 7 13 7 21"></polyline>
+                                                        <polyline points="7 3 7 8 15 8"></polyline>
+                                                    </svg>
+                                                    Add to Reminders
+                                                </button>
+                                            </div>
+                                            <div class="email-from-line">From: Sarah Johnson &lt;sarah.johnson@company.com&gt;</div>
+                                            <div class="email-date">Mon, Nov 11, 2024 at 2:30 PM</div>
+                                        </div>
+                                        <div class="email-body">
+                                            <p>Hi there,</p>
+                                            <p>I wanted to follow up on the project proposal we discussed last week. Could you please review the attached document and provide your feedback by Friday?</p>
+                                            <p>Thanks,<br>Sarah</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="demo-side demo-right">
+                        <div class="demo-app reminders-app">
+                            <div class="app-header">
+                                <div class="app-title">
+                                    <img src="logos/apple-reminders-icon.png" alt="Reminders" class="app-icon-small">
+                                    <span>Reminders</span>
+                                </div>
+                            </div>
+                            <div style="display: flex; flex: 1; overflow: hidden;">
+                                <div class="reminders-sidebar">
+                                    <div class="reminder-list-item active">Reminders</div>
+                                    <div class="reminder-list-item">Work</div>
+                                    <div class="reminder-list-item">Personal</div>
+                                </div>
+                                <div class="reminders-main">
+                                <div class="reminders-list" id="reminders-list">
+                                    <div class="reminder-item existing">
+                                        <div class="reminder-checkbox"></div>
+                                        <div class="reminder-text">Buy groceries</div>
+                                    </div>
+                                    <div class="reminder-item existing">
+                                        <div class="reminder-checkbox"></div>
+                                        <div class="reminder-text">Call dentist</div>
+                                    </div>
+                                    <div class="reminder-item new" id="new-reminder" style="opacity: 0; transform: translateY(-10px);">
+                                        <div class="reminder-checkbox"></div>
+                                        <div class="reminder-content">
+                                            <div class="reminder-title">Project proposal review needed</div>
+                                            <div class="reminder-note">From: Sarah Johnson<br>Review the attached document and provide feedback by Friday</div>
+                                            <div class="reminder-link">gmail.com/mail/u/0/#inbox/...</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="demo-controls">
+                    <button class="demo-play-btn" id="demo-play">▶ Play Demo</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="logo.png" alt="Reminders Central" class="logo-icon">
+                        <span>Reminders Central</span>
+                    </div>
+                    <p class="footer-description">
+                        Send unlimited messages to Reminders. 
+                        Chrome extension + native macOS app.
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="index.html#features">Features</a></li>
+                        <li><a href="index.html#integrations">Integrations</a></li>
+                        <li><a href="index.html#download">Download</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">GitHub</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 Reminders Central. All rights reserved.</p>
+                    <div class="theme-toggle-container">
+                        <label class="theme-toggle-label" for="theme-toggle">
+                            <span class="theme-toggle-icon">🌙</span>
+                            <span class="theme-toggle-text">Dark</span>
+                            <input type="checkbox" id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                            <span class="theme-toggle-slider"></span>
+                            <span class="theme-toggle-icon">☀️</span>
+                            <span class="theme-toggle-text">Light</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Gmail Integration Demo Animation
+        (function() {
+            const playBtn = document.getElementById('demo-play');
+            const emailItem = document.getElementById('demo-email');
+            const emailView = document.getElementById('email-view');
+            const addReminderBtn = document.getElementById('add-reminder-btn');
+            const newReminder = document.getElementById('new-reminder');
+            
+            let isPlaying = false;
+            
+            function resetDemo() {
+                // Reset email list view
+                emailView.classList.remove('active');
+                emailItem.style.display = 'flex';
+                
+                // Reset button
+                addReminderBtn.classList.remove('loading', 'success');
+                addReminderBtn.innerHTML = `
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path>
+                        <polyline points="17 21 17 13 7 13 7 21"></polyline>
+                        <polyline points="7 3 7 8 15 8"></polyline>
+                    </svg>
+                    Add to Reminders
+                `;
+                
+                // Reset reminder
+                newReminder.style.opacity = '0';
+                newReminder.style.transform = 'translateY(-10px)';
+            }
+            
+            async function playDemo() {
+                if (isPlaying) return;
+                isPlaying = true;
+                playBtn.textContent = 'Playing...';
+                playBtn.classList.add('playing');
+                playBtn.disabled = true;
+                
+                // Step 1: Click on email (after 500ms)
+                await delay(500);
+                emailItem.style.backgroundColor = '#f5f5f5';
+                
+                // Step 2: Show email view (after 800ms)
+                await delay(800);
+                emailItem.style.display = 'none';
+                emailView.classList.add('active');
+                
+                // Step 3: Highlight button (after 1000ms)
+                await delay(1000);
+                addReminderBtn.style.transform = 'scale(1.05)';
+                
+                // Step 4: Click button (after 500ms)
+                await delay(500);
+                addReminderBtn.style.transform = 'scale(1)';
+                addReminderBtn.classList.add('loading');
+                addReminderBtn.innerHTML = `
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <path d="M12 6v6l4 2"></path>
+                    </svg>
+                    Adding...
+                `;
+                
+                // Step 5: Show success state (after 1200ms)
+                await delay(1200);
+                addReminderBtn.classList.remove('loading');
+                addReminderBtn.classList.add('success');
+                addReminderBtn.innerHTML = `
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    Added!
+                `;
+                
+                // Step 6: Show reminder appearing in Reminders app (after 800ms)
+                await delay(800);
+                newReminder.style.transition = 'opacity 0.5s ease-out, transform 0.5s ease-out';
+                newReminder.style.opacity = '1';
+                newReminder.style.transform = 'translateY(0)';
+                
+                // Step 7: Reset after 3 seconds
+                await delay(3000);
+                resetDemo();
+                
+                isPlaying = false;
+                playBtn.textContent = '▶ Play Demo';
+                playBtn.classList.remove('playing');
+                playBtn.disabled = false;
+            }
+            
+            function delay(ms) {
+                return new Promise(resolve => setTimeout(resolve, ms));
+            }
+            
+            if (playBtn) {
+                playBtn.addEventListener('click', playDemo);
+            }
+            
+            // Initialize - hide email view
+            resetDemo();
+        })();
+    </script>
+</body>
+</html>
+
