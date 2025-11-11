@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reminders Central - Create Apple Reminders from Gmail, Slack, Outlook & Asana</title>
+    <title>Reminders Central - Send unlimited messages to Reminders</title>
+    <link rel="icon" type="image/png" href="logo.png">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +15,7 @@
     <nav class="nav">
         <div class="nav-container">
             <div class="nav-logo">
-                <div class="logo-icon">🔔</div>
+                <img src="logo.png" alt="Reminders Central" class="logo-icon">
                 <span class="logo-text">Reminders Central</span>
             </div>
             <div class="nav-links">
@@ -22,7 +23,7 @@
                 <a href="#integrations">Integrations</a>
                 <a href="#download">Download</a>
             </div>
-            <button class="nav-cta">Get Started</button>
+            <a href="#download" class="nav-cta">Get Started</a>
         </div>
     </nav>
 
@@ -31,8 +32,8 @@
         <div class="hero-container">
             <div class="hero-content">
                 <h1 class="hero-title">
-                    Create Apple Reminders<br>
-                    from <span class="gradient-text">anywhere</span>
+                    Send unlimited messages<br>
+                    to <span class="gradient-text">Reminders</span>
                 </h1>
                 <p class="hero-subtitle">
                     Reminders Central is a Chrome extension and macOS app that lets you create Apple Reminders 
@@ -40,8 +41,8 @@
                     with full context preserved.
                 </p>
                 <div class="hero-cta">
-                    <button class="btn-primary">Get Chrome Extension</button>
-                    <button class="btn-secondary">Download macOS App</button>
+                    <a href="https://apps.apple.com/app/reminders-central" target="_blank" rel="noopener noreferrer" class="btn-primary">Download from Mac App Store</a>
+                    <a href="https://chrome.google.com/webstore/detail/reminders-central" target="_blank" rel="noopener noreferrer" class="btn-secondary">Get Chrome Extension</a>
                 </div>
             </div>
             <div class="hero-visual">
@@ -56,10 +57,10 @@
                         </div>
                         <div class="app-content">
                             <div class="preview-header">
-                                <div class="preview-icon">🔔</div>
+                                <img src="logo.png" alt="Reminders Central" class="preview-icon">
                                 <div>
                                     <h3>Reminders Central</h3>
-                                    <p>Create reminders from Gmail, Slack, Outlook & Asana</p>
+                                    <p>Send unlimited messages to Reminders</p>
                                 </div>
                             </div>
                             <div class="preview-card">
@@ -67,7 +68,7 @@
                                     <div class="plan-icon">F</div>
                                     <div>
                                         <span class="plan-name">Free Plan</span>
-                                        <span class="plan-details">2 messages left for today</span>
+                                        <span class="plan-details">2 messages per hour</span>
                                     </div>
                                     <div class="plan-usage">0/2</div>
                                 </div>
@@ -122,32 +123,64 @@
             </div>
             <div class="features-grid">
                 <div class="feature-card">
-                    <div class="feature-icon">⚡</div>
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                            <path d="M12 8V16M8 12H16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
                     <h3>One-Click Creation</h3>
                     <p>Add an "Add to Reminders" button directly in Gmail, Slack, Outlook, and Asana. Create reminders without leaving your workflow.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">🔗</div>
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 13C10.4295 13.5741 10.9774 14.0491 11.6066 14.3929C12.2357 14.7367 12.9315 14.9411 13.6467 14.9923C14.3618 15.0435 15.0796 14.9403 15.7513 14.6897C16.4231 14.4392 17.0331 14.047 17.54 13.54L20.54 10.54C21.4508 9.59695 21.9548 8.33394 21.9434 7.02296C21.932 5.71198 21.4061 4.45791 20.4791 3.53087C19.5521 2.60383 18.298 2.07799 16.987 2.0666C15.676 2.0552 14.413 2.55918 13.47 3.47L11.75 5.18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M14 11C13.5705 10.4259 13.0226 9.95087 12.3934 9.60711C11.7643 9.26335 11.0685 9.05886 10.3533 9.00766C9.63816 8.95645 8.92037 9.05972 8.24865 9.31026C7.57693 9.5608 6.96688 9.95304 6.46 10.46L3.46 13.46C2.54918 14.403 2.04519 15.6661 2.05659 16.977C2.06798 18.288 2.59382 19.5421 3.52086 20.4691C4.4479 21.3962 5.70197 21.922 7.01295 21.9334C8.32393 21.9448 9.58694 21.4408 10.53 20.53L12.24 18.82" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
                     <h3>Context Preserved</h3>
                     <p>Every reminder includes a link back to the original email or message. Never lose context when you need to follow up.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">🎯</div>
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 5H7C5.89543 5 5 5.89543 5 7V19C5 20.1046 5.89543 21 7 21H17C18.1046 21 19 20.1046 19 19V7C19 5.89543 18.1046 5 17 5H15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M9 5C9 3.89543 9.89543 3 11 3H13C14.1046 3 15 3.89543 15 5V5C15 6.10457 14.1046 7 13 7H11C9.89543 7 9 6.10457 9 5V5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M9 12H15M9 16H15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
                     <h3>Choose Your List</h3>
                     <p>Select which Apple Reminders list to use for each reminder. Organize work, personal, and project reminders separately.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">🔒</div>
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="5" y="11" width="14" height="10" rx="2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M7 11V7C7 4.23858 9.23858 2 12 2C14.7614 2 17 4.23858 17 7V11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
                     <h3>Privacy First</h3>
                     <p>All processing happens locally on your Mac. The macOS app runs a local server—no cloud, no external services, no data collection.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">💎</div>
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
                     <h3>Freemium Model</h3>
-                    <p>Start with 2 free reminders per day. Upgrade to premium for unlimited reminders and priority processing.</p>
+                    <p>Start with 2 messages per hour. After hitting the limit, wait an hour for it to reset. Upgrade to premium for unlimited reminders.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">🔄</div>
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21.5 2V6H17.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2.5 22V18H6.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M21.5 6L16.5 11C15.9 11.6 14.9 11.6 14.3 11L13 9.7C12.4 9.1 12.4 8.1 13 7.5L18 2.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2.5 18L7.5 13C8.1 12.4 9.1 12.4 9.7 13L11 14.3C11.6 14.9 11.6 15.9 11 16.5L6 21.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
                     <h3>iCloud Sync</h3>
                     <p>Reminders sync automatically across all your Apple devices through iCloud. Access them on iPhone, iPad, and Mac.</p>
                 </div>
@@ -167,14 +200,14 @@
             <div class="workflow">
                 <div class="workflow-step">
                     <div class="step-number">1</div>
-                    <h3>Install Chrome Extension</h3>
-                    <p>Add the Reminders Central extension to Chrome. It injects "Add to Reminders" buttons into Gmail, Slack, Outlook, and Asana.</p>
+                    <h3>Download macOS App</h3>
+                    <p>Download Reminders Central from the Mac App Store. The native macOS app runs a local server on port 5124 and uses AppleScript to create reminders in the Reminders app.</p>
                 </div>
                 <div class="workflow-arrow">→</div>
                 <div class="workflow-step">
                     <div class="step-number">2</div>
-                    <h3>Download macOS App</h3>
-                    <p>The native macOS app runs a local server on port 5124. It uses AppleScript to create reminders in the Reminders app.</p>
+                    <h3>Install Chrome Extension</h3>
+                    <p>Add the Reminders Central extension from the Chrome Web Store. It injects "Add to Reminders" buttons into Gmail, Slack, Outlook, and Asana.</p>
                 </div>
                 <div class="workflow-arrow">→</div>
                 <div class="workflow-step">
@@ -229,12 +262,12 @@
             <div class="cta-content">
                 <h2 class="cta-title">Ready to get started?</h2>
                 <p class="cta-subtitle">
-                    Install the Chrome extension and download the macOS app. Start with 2 free reminders per day, 
-                    or upgrade to premium for unlimited reminders.
+                    Download the macOS app from the Mac App Store, then install the Chrome extension from the Chrome Web Store. 
+                    Start with 2 messages per hour (resets hourly), or upgrade to premium for unlimited reminders.
                 </p>
                 <div class="cta-buttons">
-                    <button class="btn-primary large">Get Chrome Extension</button>
-                    <button class="btn-secondary large">Download macOS App</button>
+                    <a href="https://apps.apple.com/app/reminders-central" target="_blank" rel="noopener noreferrer" class="btn-primary large">Download from Mac App Store</a>
+                    <a href="https://chrome.google.com/webstore/detail/reminders-central" target="_blank" rel="noopener noreferrer" class="btn-secondary large">Get Chrome Extension</a>
                 </div>
             </div>
         </div>
@@ -246,11 +279,11 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <div class="footer-logo">
-                        <div class="logo-icon">🔔</div>
+                        <img src="logo.png" alt="Reminders Central" class="logo-icon">
                         <span>Reminders Central</span>
                     </div>
                     <p class="footer-description">
-                        Create Apple Reminders from Gmail, Slack, Outlook, and Asana. 
+                        Send unlimited messages to Reminders. 
                         Chrome extension + native macOS app.
                     </p>
                 </div>
