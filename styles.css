@@ -454,7 +454,16 @@ body {
 
 .integration-icon {
     margin-left: auto;
-    font-size: 20px;
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    display: block;
+    opacity: 0.9;
+    transition: opacity 0.2s;
+}
+
+.integration-icon:hover {
+    opacity: 1;
 }
 
 .preview-status {
@@ -654,8 +663,20 @@ body {
 }
 
 .integration-card-icon {
-    font-size: 48px;
+    width: 64px;
+    height: 64px;
     margin-bottom: 20px;
+    object-fit: contain;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.9;
+    transition: opacity 0.2s, transform 0.2s;
+}
+
+.integration-card:hover .integration-card-icon {
+    opacity: 1;
+    transform: scale(1.05);
 }
 
 .integration-card h3 {
